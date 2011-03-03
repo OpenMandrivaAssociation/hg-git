@@ -1,5 +1,5 @@
 %define name	hg-git
-%define version 0.2.5
+%define version 0.2.6
 %define release %mkrel 1
 
 Summary:	Mercurial plugin for communicating with Git servers
