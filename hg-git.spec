@@ -1,20 +1,20 @@
 %define name	hg-git
-%define version 0.2.6
+%define version 0.3.1
 %define release %mkrel 1
 
 Summary:	Mercurial plugin for communicating with Git servers
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
-Source0:	%{name}-%{version}.tar.gz
+Source0:	http://pypi.python.org/packages/source/h/%{name}/%{name}-%{version}.tar.gz
 License:	GPLv2
 Group:		Development/Other
 Url:		http://hg-git.github.com/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:	noarch
 Requires:	mercurial >= 1.3
-Requires:	python-dulwich >= 0.6.0
-BuildRequires:	python-dulwich >= 0.6.0
+Requires:	python-dulwich >= 0.8.0
+BuildRequires:	python-dulwich >= 0.8.0
 %py_requires -d
 
 %description
