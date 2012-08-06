@@ -1,6 +1,11 @@
 %define name	hg-git
-%define version 0.3.2
-%define release %mkrel 1
+%define version 0.3.3
+%define	rel		1
+%if %mdkversion < 201100
+%define release %mkrel %{rel}
+%else
+%define	release	%{rel}
+%endif 
 
 Summary:	Mercurial plugin for communicating with Git servers
 Name:		%{name}
