@@ -1,5 +1,5 @@
 %define name	hg-git
-%define version 0.3.3
+%define version 0.3.4
 %define	rel		1
 %if %mdkversion < 201100
 %define release %mkrel %{rel}
@@ -35,7 +35,7 @@ Git and Mercurial.
 %install
 %__rm -rf %{buildroot}
 
-PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot} --record=FILE_LIST
+PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot}
 cat <<EOF > hg-git.rc
 [extensions]
 hgext.bookmarks =
@@ -48,6 +48,8 @@ EOF
 %clean
 %__rm -rf %{buildroot}
 
-%files -f FILE_LIST
+%files
 %defattr(-,root,root)
 %config(noreplace) %{_sysconfdir}/mercurial/hgrc.d/hg-git.rc
+%py_sitedir/hg_git*
+%py_sitedir/hggit*
