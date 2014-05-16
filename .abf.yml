@@ -1,2 +1,4 @@
+removed_sources:
+  hg-git-0.3.3.tar.gz: 4cec2a33b2f2f529d47f5a190999e3e31a4f6441
 sources:
-  "hg-git-0.3.3.tar.gz": 4cec2a33b2f2f529d47f5a190999e3e31a4f6441
+  hg-git-0.6.0.tar.gz: 9a129280ce204f3d08dd4ff15d67f634c3e77f16
