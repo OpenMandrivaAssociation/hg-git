@@ -2,7 +2,7 @@ Summary:	Mercurial plugin for communicating with Git servers
 
 Name:		hg-git
 Version:	0.6.0
-Release:	2
+Release:	3
 Source0:	http://pypi.python.org/packages/source/h/%{name}/%{name}-%{version}.tar.gz
 License:	GPLv2
 Group:		Development/Other
