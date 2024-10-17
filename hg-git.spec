@@ -6,7 +6,7 @@ Release:	3
 Source0:	http://pypi.python.org/packages/source/h/%{name}/%{name}-%{version}.tar.gz
 License:	GPLv2
 Group:		Development/Other
-Url:		http://hg-git.github.com/
+Url:		https://hg-git.github.com/
 BuildArch:	noarch
 Requires:	mercurial >= 1.3
 Requires:	python-dulwich >= 0.8.0
